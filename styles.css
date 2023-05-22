@@ -11,18 +11,43 @@ body {
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .article-preview-card {
+  max-width: 370px;
+  display: grid;
+  grid-template-rows: auto 64px;
+  min-height: 100%;
 }
 
 .article-heading {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .article-description {
 }
 
+.article-description p {
+  margin: 12px 0 32px;
+}
+
 .article-writer {
+  display: grid;
+  grid-template-columns: 40px auto 33px;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.article-writer .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .writer-name-date {
