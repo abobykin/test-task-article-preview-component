@@ -24,49 +24,85 @@
   <body>
     <main>
       <div class="article-preview-card">
-        <div class="article-description">
-          <img src="./images/drawers.jpg" alt="Article writer photo" />
+        <div class="article-image"></div>
+        <div class="article">
+          <div class="article-description">
+            <h1 class="article-heading">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
 
-          <h1 class="article-heading">
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h1>
-
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-        </div>
-
-        <div class="article-writer">
-          <img
-            src="./images/avatar-michelle.jpg"
-            class="avatar"
-            alt="Article illustration"
-          />
-          <div class="writer-name-date">
-            <div class="name">Michelle Appleton</div>
-            <div class="date">28 Jun 2020</div>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
           </div>
 
-          <button id="show-dialog-btn" type="button" class="share-button-icon">
-            <img src="./images/icon-share.svg" alt="Icon with arrow" />
-          </button>
-
-          <dialog id="my-dialog">
-            <p>SHARE</p>
-
-            ICONS-links
+          <div class="article-writer">
+            <img
+              src="./images/avatar-michelle.jpg"
+              class="avatar"
+              alt="Article illustration"
+            />
+            <div class="writer-name-date">
+              <div class="name">Michelle Appleton</div>
+              <div class="date">28 Jun 2020</div>
+            </div>
 
             <button
-              id="close-dialog-btn"
+              id="show-dialog-btn"
               type="button"
               class="share-button-icon"
             >
-              <img src="./images/icon-share.svg" alt="Icon with arrow" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
             </button>
-          </dialog>
+
+            <!-- Popup starts -->
+            <dialog id="my-dialog" class="share-popup">
+              <div class="social-links">
+                <h2>SHARE</h2>
+                <ul>
+                  <li>
+                    <a href="">
+                      <img src="./images/icon-facebook.svg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./images/icon-twitter.svg" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="./images/icon-pinterest.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                id="close-dialog-btn"
+                type="button"
+                class="share-button-icon desktop-hidden"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                  <path
+                    fill="white"
+                    d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                  />
+                </svg>
+              </button>
+
+              <div class="popup-arrow-down"></div>
+            </dialog>
+            <!-- Popup ends -->
+          </div>
         </div>
       </div>
     </main>
