@@ -54,6 +54,7 @@
               id="show-dialog-btn"
               type="button"
               class="share-button-icon"
+              aria-label="Show sharing dialog"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                 <path
@@ -64,7 +65,7 @@
             </button>
 
             <!-- Popup starts -->
-            <dialog id="my-dialog" class="share-popup">
+            <div id="my-dialog" class="share-popup">
               <div class="social-links">
                 <h2>SHARE</h2>
                 <ul>
@@ -90,6 +91,7 @@
                 id="close-dialog-btn"
                 type="button"
                 class="share-button-icon desktop-hidden"
+                aria-label="Share"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                   <path
@@ -100,7 +102,7 @@
               </button>
 
               <div class="popup-arrow-down"></div>
-            </dialog>
+            </div>
             <!-- Popup ends -->
           </div>
         </div>

@@ -123,6 +123,7 @@ main {
 }
 
 .share-popup {
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -132,14 +133,16 @@ main {
   padding: 16px 32px;
   width: 100%;
   border-radius: 0 0 10px 10px;
-  opacity: 0;
-  transition: all 0.35s;
+  visibility: hidden;
 }
 
-.share-popup[open] {
+.share-popup.show {
   opacity: 1;
   display: flex;
   align-items: center;
+  visibility: visible;
+  -webkit-animation: fadeIn 0.4s;
+  animation: fadeIn 0.4s;
 }
 
 .share-popup h2 {
@@ -200,7 +203,7 @@ main {
   }
 
   .article-description {
-    padding-top: 32px;
+    padding: 32px 40px 0;
   }
 
   .article-writer {
@@ -240,5 +243,24 @@ main {
 
   .desktop-hidden {
     display: none;
+  }
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

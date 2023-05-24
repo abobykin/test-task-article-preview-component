@@ -3,14 +3,9 @@ const myDialog = document.querySelector('#my-dialog')
 const closeDialogBtn = document.querySelector('#close-dialog-btn')
 
 showDialogBtn.addEventListener('click', () => {
-  myDialog.show()
+  myDialog.classList.toggle('show')
 })
 
 closeDialogBtn.addEventListener('click', () => {
-  myDialog.close()
-})
-
-document.addEventListener('click', (e) => {
-  if (!e.target.matches('#show-dialog-btn') && !e.target.matches('path'))
-    myDialog.close()
+  myDialog.classList.toggle('show')
 })
