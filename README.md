@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/abobykin/test-task-article-preview-component)
+- Live Site URL: [GitHub Pages](https://abobykin.github.io/test-task-article-preview-component/)
 
 ## My process
 
@@ -38,7 +38,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/abobykin)
+- Website - [Alexander Bobykin](https://alexfrontend.com/)
+- Frontend Mentor - [@abobykin](https://www.frontendmentor.io/profile/abobykin)
 
 
